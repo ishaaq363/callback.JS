@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="play"></h1>
+
+    <script>
+
+        function display(result){
+            document.getElementById("play").innerHTML=result
+        }
+
+        async function add(x,y){
+            let sum= await x+y
+            display(sum)
+        }
+        add(8,4,display)
+    </script>
+</body>
+</html>
